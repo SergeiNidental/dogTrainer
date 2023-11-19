@@ -3,7 +3,7 @@ import React, { StrictMode } from "react";
 
 // import "../../src/styles/common_rules/__main";
 
-// import App from "./app";
+import App from './app'
 
 const root = createRoot(document.getElementById("root"));
 

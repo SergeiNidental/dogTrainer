@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-import Header from "./header/header";
+import Header from './header/header';
+import Img from "./components/img";
 
-import "../../src/styles/common_rules/__main";
+// import "../../src/styles/common_rules/__main";
 
-import logo from "../../src/img/logo";
-import plus from "../../src/img/plus";
+// import logo from "../../src/img/logo";
+// import plus from "../../src/img/plus";
+import avatar from '../img/avatar.jpg';
 
 export default function App() {
 //   const [uList, setUList] = useState([]);
@@ -36,7 +38,7 @@ export default function App() {
   return (
     <>
       <Header>
-        <Img src={logo} alt="logo" />
+        <Img src={avatar} alt="avatar" />
       </Header>
       {/* <Form isQuestForm={true}>
         <Input
