@@ -1,0 +1,12 @@
+/* body and fonts */
+/* @font-face {
+    font-family: Inter;
+    src: url(../../fonts/Inter-VariableFont_slnt_wght.ttf);
+  } */
+  
+  body {
+    box-sizing: border-box;
+    color: #fceccc;
+    font-family: "Inter", sans-serif;
+  }
+  

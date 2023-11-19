@@ -4,6 +4,7 @@ import Header from './header/header';
 import Img from "./components/img";
 
 // import "../../src/styles/common_rules/__main";
+import '../styles/__main';
 
 // import logo from "../../src/img/logo";
 // import plus from "../../src/img/plus";
