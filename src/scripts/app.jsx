@@ -2,12 +2,10 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import Header from './header/header';
 import Img from "./components/img";
+import Text from '../scripts/components/text';
 
-// import "../../src/styles/common_rules/__main";
 import '../styles/__main';
 
-// import logo from "../../src/img/logo";
-// import plus from "../../src/img/plus";
 import avatar from '../img/avatar.jpg';
 
 export default function App() {
@@ -41,6 +39,12 @@ export default function App() {
       <Header>
         <Img src={avatar} alt="avatar" />
       </Header>
+      <Text>
+        ЕКАТЕРИНА НИДЕНТАЛЬ
+      </Text>
+      <Text>
+      Дипломированный кинолог, специалист по работе с проблемным поведением, бытовому воспитанию и трюковой дрессировки
+      </Text>
       {/* <Form isQuestForm={true}>
         <Input
           type="text"
