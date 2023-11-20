@@ -1,8 +1,19 @@
 import React from "react";
 
-export default function Text({children}){
+import '../../styles/text/__text';
+import '../../styles/text/__text_name';
+
+export default function Text({id, children}){
+let classCase;
+
+switch (id) {
+    case 'name':
+        classCase='name';
+        break;
+}
+
     return(
-        <p>
+        <p className={classCase}>
             {children}
         </p>
     );

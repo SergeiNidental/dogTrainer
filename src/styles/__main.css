@@ -1,12 +1,13 @@
 /* body and fonts */
-/* @font-face {
-    font-family: Inter;
-    src: url(../../fonts/Inter-VariableFont_slnt_wght.ttf);
-  } */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../../src/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
+  }
   
   body {
     box-sizing: border-box;
     background-color: #ffe8cc;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #6d4832;
   }
   

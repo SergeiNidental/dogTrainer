@@ -39,7 +39,7 @@ export default function App() {
       <Header>
         <Img src={avatar} alt="avatar" />
       </Header>
-      <Text>
+      <Text id='name'>
         ЕКАТЕРИНА НИДЕНТАЛЬ
       </Text>
       <Text>
