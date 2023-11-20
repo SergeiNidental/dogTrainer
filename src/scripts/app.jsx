@@ -42,7 +42,7 @@ export default function App() {
       <Text id='name'>
         ЕКАТЕРИНА НИДЕНТАЛЬ
       </Text>
-      <Text>
+      <Text id='nameDiscription'>
       Дипломированный кинолог, специалист по работе с проблемным поведением, бытовому воспитанию и трюковой дрессировки
       </Text>
       {/* <Form isQuestForm={true}>
