@@ -1,5 +1,7 @@
 import React from "react";
 
+import Text from '../components/text';
+
 import '../../styles/accordeon/__accordeon';
 
 export default function Accordeon({children}){
@@ -9,6 +11,9 @@ export default function Accordeon({children}){
             <p id="accordeon">
             {children}
             </p>
+            <Text typeTag='h1' id='diploms'>
+                Мои дипломы и сертификаты
+            </Text>
         </div>
     )
 }

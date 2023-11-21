@@ -66,9 +66,6 @@ export default function App() {
             Занимаюсь очно в Ереване, а также онлайн по всему миру.<br  />
 
             Буду рада видеть вас на своих занятиях!
-          {/* <Text typeTag='div' id='diploms'>
-            Мои дипломы и сертификаты
-          </Text> */}
         </Accordeon>
       </Container>
       {/* <Form isQuestForm={true}>
