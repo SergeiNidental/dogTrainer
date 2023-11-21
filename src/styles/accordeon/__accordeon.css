@@ -8,7 +8,8 @@
 }
 
 .accordeon {
-    background-color: #ffe8cc;
+    background-color: #fff4e6;
+    border-radius: 50px;
     cursor: pointer;
     width: 100%;
     padding: 18px;
@@ -22,7 +23,8 @@
   }
   
   .active, .accordeon:hover {
-    background-color: #fadbb5
+    background-color: #fadbb5;
+    border-radius: 50px;
   }
   
   .panel {
@@ -30,4 +32,5 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    font-weight: 300;
   }
