@@ -3,27 +3,12 @@ import React from "react";
 import '../../styles/accordeon/__accordeon';
 
 export default function Accordeon({children}){
-
-    const handleAccordeonClick = (elem) => {
-        const currentTarget = elem.currentTarget;
-        currentTarget.classList.toggle('active');
-        const nextText = currentTarget.nextElementSibling;
-        if (nextText.style.maxHeight) {
-            nextText.style.maxHeight = null;
-        } else {
-            nextText.style.maxHeight = nextText.scrollHeight + 'px';
-        }
-
-    }
     
     return (
-        <div className="container">
-        <button className="accordeon" onPointerDown={handleAccordeonClick}>ПОДРОБНЕЕ ОБО МНЕ</button>
-        <div className="panel" onPointerDown={handleAccordeonClick}>
+        <div className="accordeon">
             <p id="accordeon">
             {children}
             </p>
-        </div>
         </div>
     )
 }

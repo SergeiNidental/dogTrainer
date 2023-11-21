@@ -7,8 +7,10 @@ import Text from '../scripts/components/text';
 import '../styles/__main';
 
 import avatar from '../img/avatar.jpg';
-import Button from "./components/accordeon";
+
 import Accordeon from "./components/accordeon";
+import Container from '../scripts/components/container';
+import Button from '../scripts/components/button';
 
 export default function App() {
 //   const [uList, setUList] = useState([]);
@@ -47,7 +49,9 @@ export default function App() {
       <Text id='nameDiscription'>
       Дипломированный кинолог, специалист по работе с проблемным поведением, бытовому воспитанию и трюковой дрессировки
       </Text>
-      <Accordeon>
+      <Container>
+        <Button>ПОДРОБНЕЕ ОБО МНЕ</Button>
+        <Accordeon>
       Привет, друзья 😊<br  /><br  />
 ‌
 Меня зовут Екатерина Ниденталь.<br  /><br  />
@@ -62,7 +66,11 @@ export default function App() {
 Занимаюсь очно в Ереване, а также онлайн по всему миру.<br  />
 
 Буду рада видеть вас на своих занятиях!
-      </Accordeon>
+</Accordeon>
+      {/* <Text id='diploms'>
+        Мои дипломы и сертификаты
+      </Text> */}
+      </Container>
       {/* <Form isQuestForm={true}>
         <Input
           type="text"
