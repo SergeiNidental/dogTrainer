@@ -1,4 +1,6 @@
     .accordeon {
+    display: flex;
+    flex-direction: column;
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
