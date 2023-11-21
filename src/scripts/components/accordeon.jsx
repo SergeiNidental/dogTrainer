@@ -17,14 +17,14 @@ export default function Accordeon({children}){
     }
     
     return (
-        <>
+        <div className="container">
         <button className="accordeon" onPointerDown={handleAccordeonClick}>ПОДРОБНЕЕ ОБО МНЕ</button>
         <div className="panel" onPointerDown={handleAccordeonClick}>
             <p id="accordeon">
             {children}
             </p>
         </div>
-        </>
+        </div>
     )
 }
 
