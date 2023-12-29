@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import {Route, Routes} from 'react-router-dom';
 
 import Header from './header/header';
 import Img from "./components/img";
@@ -71,6 +72,10 @@ export default function App() {
       <Text typeTag='h2' id='services'>
         Услуги
       </Text>
+      <Button>ОНЛАЙН-ЗАНЯТИЯ</Button>
+      <Button>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Button>
+      <Button>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Button>
+      <Button>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Button>
       {/* <Form isQuestForm={true}>
         <Input
           type="text"
