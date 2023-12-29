@@ -11,7 +11,9 @@ export default function Button({children}){
         if (nextText.style.maxHeight) {
             nextText.style.maxHeight = null;
         } else {
-            nextText.style.maxHeight = nextText.scrollHeight + 'px';
+            const nextTextHeight = nextText.scrollHeight;
+            const windowHeight = window.innerHeight;
+            nextText.style.maxHeight = Math.min(nextTextHeight, windowHeight) + 'px';
         }
 
     }
