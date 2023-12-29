@@ -4,14 +4,15 @@ import {Route, Routes} from 'react-router-dom';
 import Header from './header/header';
 import Img from "./components/img";
 import Text from '../scripts/components/text';
+import Accordeon from "./components/accordeon";
+import Container from '../scripts/components/container';
+import Button from '../scripts/components/button';
 
 import '../styles/__main';
 
 import avatar from '../img/avatar.jpg';
 
-import Accordeon from "./components/accordeon";
-import Container from '../scripts/components/container';
-import Button from '../scripts/components/button';
+
 
 export default function App() {
 //   const [uList, setUList] = useState([]);
