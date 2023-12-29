@@ -68,6 +68,9 @@ export default function App() {
             Буду рада видеть вас на своих занятиях!
         </Accordeon>
       </Container>
+      <Text typeTag='h2' id='services'>
+        Услуги
+      </Text>
       {/* <Form isQuestForm={true}>
         <Input
           type="text"

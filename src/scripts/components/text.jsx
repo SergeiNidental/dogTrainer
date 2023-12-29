@@ -4,6 +4,7 @@ import '../../styles/text/__text';
 import '../../styles/text/__text_name';
 import '../../styles/text/__text_nameDiscription';
 import '../../styles/text/__text_diploms';
+import '../../styles/text/__text_services';
 
 export default function Text({typeTag, id, children}){
 let classCase;
@@ -17,6 +18,9 @@ switch (id) {
         break;
     case 'diploms':
         classCase={className:'diploms'};
+        break;
+    case 'services':
+        classCase={className:'services'};
         break;
 }
 
