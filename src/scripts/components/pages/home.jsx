@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Header from './header/header';
 import Img from "./components/img";
 import Text from '../scripts/components/text';
