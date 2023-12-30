@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 import Header from '../../header/header';
 import Img from "../img";
@@ -6,13 +7,11 @@ import Text from '../text';
 import Accordeon from "../accordeon";
 import Container from '../container';
 import Button from '../button';
-import Link from '../links';
 
 import '../../../styles/__main';
+import '../../../styles/button/__button';
 
 import avatar from '../../../img/avatar.jpg';
-import CustomLink from '../links';
-
 
 export default function Home() {
     return (
@@ -48,10 +47,10 @@ export default function Home() {
       <Text typeTag='h2' id='services'>
         Услуги
       </Text>
-      <CustomLink id='online'>ОНЛАЙН-ЗАНЯТИЯ</CustomLink><br  /><br  />
-      <CustomLink id='inPerson'>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</CustomLink><br  /><br  />
-      <CustomLink id='express'>ЭКПРЕСС-КОНСУЛЬТАЦИИ</CustomLink><br  /><br  />
-      <CustomLink id='calm'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</CustomLink>
+      <Link to='online' className='button'>ОНЛАЙН-ЗАНЯТИЯ</Link><br  /><br  />
+      <Link to='inPerson'>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Link><br  /><br  />
+      <Link to='express'>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Link><br  /><br  />
+      <Link to='calm'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Link>
         </>
     )
 }
