@@ -6,6 +6,7 @@ import Text from '../text';
 import Accordeon from "../accordeon";
 import Container from '../container';
 import Button from '../button';
+import Link from '../links';
 
 import '../../../styles/__main';
 
@@ -46,10 +47,10 @@ export default function Home() {
       <Text typeTag='h2' id='services'>
         Услуги
       </Text>
-      <Button>ОНЛАЙН-ЗАНЯТИЯ</Button>
-      <Button>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Button>
-      <Button>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Button>
-      <Button>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Button>
+      <Link id='online'>ОНЛАЙН-ЗАНЯТИЯ</Link><br  /><br  />
+      <Link id='inPerson'>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Link><br  /><br  />
+      <Link id='express'>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Link><br  /><br  />
+      <Link id='calm'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Link>
         </>
     )
 }
