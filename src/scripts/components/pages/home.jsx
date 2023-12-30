@@ -45,12 +45,15 @@ export default function Home() {
         </Accordeon>
       </Container>
       <Text typeTag='h2' id='services'>
-        Услуги
+        УСЛУГИ
       </Text>
       <Link to='online' className='link'>ОНЛАЙН-ЗАНЯТИЯ</Link><br  />
       <Link to='inPerson' className='link'>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Link><br  />
       <Link to='express' className='link'>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Link><br  />
-      <Link to='calm' className='link'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Link>
+      <Link to='calm' className='link'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Link><br  />
+      <Text typeTag='h2' id='reviews'>
+        ОТЗЫВЫ УЧЕНИКОВ
+      </Text>
         </>
     )
 }

@@ -22,6 +22,9 @@ switch (id) {
     case 'services':
         classCase={className:'services'};
         break;
+    case 'reviews':
+        classCase={className:'services'};
+        break;
 }
 
     return React.createElement(typeTag,classCase, children);
