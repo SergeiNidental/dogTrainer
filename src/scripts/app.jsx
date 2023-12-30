@@ -2,6 +2,10 @@ import React, { useState, useEffect, useCallback } from "react";
 import {Route, Routes} from 'react-router-dom';
 
 import Home from '../scripts/components/pages/home';
+import CalmAndSelfcontrol from './components/pages/calm_and_selfcontrol';
+import ExpressTrenings from './components/pages/express_trenings';
+import OnlineCourses from './components/pages/online_courses';
+import PersonalTrenings from './components/pages/personal_trenings';
 
 import '../styles/__main';
 
@@ -32,9 +36,14 @@ export default function App() {
 //     [inputState]
 //   );
   return (
-    <>
-    <Home />
-
+   <>
+   <Routes>
+      <Route path="/" element={<Home />}  /> 
+      <Route path="/online" element={<OnlineCourses />} />
+      <Route path="inPerson" element={<PersonalTrenings />} />
+      <Route path="express" element={<ExpressTrenings />} />
+      <Route path="calm" element={<CalmAndSelfcontrol />} />
+   </Routes>
       {/* <Form isQuestForm={true}>
         <Input
           type="text"
@@ -58,6 +67,6 @@ export default function App() {
         <Preview uList={uList} />
         <Task uList={uList} setUList={setUList} />
       </Form> */}
-    </>
+      </>
   );
 }

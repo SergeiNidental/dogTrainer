@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import '../../styles/button/__button';
 
-export default function Link({id, children}){
+export default function CustomLink({id, children}){
 
     return(
-        <a href={id} className="button">
+        <Link to={id} className="button">
             {children}
-        </a>
+        </Link>
     )
 }
