@@ -9,7 +9,7 @@ import Container from '../container';
 import Button from '../button';
 
 import '../../../styles/__main';
-import '../../../styles/button/__button';
+import '../../../styles/links/__links';
 
 import avatar from '../../../img/avatar.jpg';
 
@@ -47,10 +47,10 @@ export default function Home() {
       <Text typeTag='h2' id='services'>
         Услуги
       </Text>
-      <Link to='online' className='button'>ОНЛАЙН-ЗАНЯТИЯ</Link><br  /><br  />
-      <Link to='inPerson'>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Link><br  /><br  />
-      <Link to='express'>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Link><br  /><br  />
-      <Link to='calm'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Link>
+      <Link to='online' className='link'>ОНЛАЙН-ЗАНЯТИЯ</Link><br  />
+      <Link to='inPerson' className='link'>ОЧНЫЕ ЗАНЯТИЯ В МОНРЕАЛЕ</Link><br  />
+      <Link to='express' className='link'>ЭКПРЕСС-КОНСУЛЬТАЦИИ</Link><br  />
+      <Link to='calm' className='link'>КУРС ПО СПОКОЙСТВИЮ И САМОКОНТРОЛЮ</Link>
         </>
     )
 }
