@@ -13,6 +13,7 @@ import '../../../styles/__main';
 import '../../../styles/links/__links';
 
 import avatar from '../../../img/avatar.jpg';
+import plus from '../../../img/plus.svg';
 
 export default function Home() {
     return (
@@ -63,6 +64,7 @@ export default function Home() {
       </Text>
       <Container>
         <Button id='question'>Как я работаю?</Button>
+        <Img src={plus} alt='plus'/>
         <Accordeon id='second'>
         В работе использую современные гуманные методы. Для меня физическое и психологическое состояние собаки и её владельца в приоритете.
 Я не являюсь сторонницей теории доминирования. Не применяю в работе побои, рывки, альфа-перевороты и тому подобное. Не использую аверсивную амуницию - удавки, строгие ошейники, электрошоковые ошейники.

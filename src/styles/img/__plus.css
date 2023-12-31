@@ -1,0 +1,8 @@
+.plus {
+    position: absolute;
+    height: 3%;
+    width: 3%;
+    top: 50%; /* Расположение относительно вертикального центра .question */
+    right: 0; /* Расположение относительно правого края .question */
+    transform: translate(0, -50%); 
+}
