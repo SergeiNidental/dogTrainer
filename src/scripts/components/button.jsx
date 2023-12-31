@@ -13,6 +13,9 @@ export default function Button({children}){
         } else {
             const nextTextHeight = nextText.scrollHeight;
             const windowHeight = window.innerHeight;
+            if (windowHeight - nextTextHeight < nextText.getBoundingClientRect().top) {
+                nextText.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
             nextText.style.maxHeight = Math.min(nextTextHeight, windowHeight) + 'px';
         }
 

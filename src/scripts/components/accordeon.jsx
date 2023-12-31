@@ -7,6 +7,7 @@ import '../../styles/accordeon/__accordeon';
 
 export default function Accordeon({id, children}){
     let customAccordeon;
+
     switch(id){
         case 'first':
             customAccordeon=(
@@ -23,7 +24,7 @@ export default function Accordeon({id, children}){
             break;
         case 'second':
             customAccordeon=(
-                <div className="accordeon">
+                <div className="accordeon" >
                 <p id="accordeon">
                 {children}
                 </p>
@@ -32,7 +33,9 @@ export default function Accordeon({id, children}){
             break;
     }
 
-    return (customAccordeon)
+    return (
+        customAccordeon
+    )
 }
 
 
