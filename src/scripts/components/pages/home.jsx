@@ -58,6 +58,9 @@ export default function Home() {
       <Container>
       <Gallary id='reviews'/>
       </Container>
+      <Text typeTag='h2' id='reviews'>
+        ВОПРОСЫ И ОТВЕТЫ
+      </Text>
         </>
     )
 }
