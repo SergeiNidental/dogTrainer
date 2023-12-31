@@ -7,6 +7,7 @@ import Text from '../text';
 import Accordeon from "../accordeon";
 import Container from '../container';
 import Button from '../button';
+import Gallary from '../gallary';
 
 import '../../../styles/__main';
 import '../../../styles/links/__links';
@@ -54,6 +55,9 @@ export default function Home() {
       <Text typeTag='h2' id='reviews'>
         ОТЗЫВЫ УЧЕНИКОВ
       </Text>
+      <Container>
+      <Gallary id='reviews'/>
+      </Container>
         </>
     )
 }

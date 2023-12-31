@@ -15,7 +15,7 @@ export default function Accordeon({children}){
             <Text typeTag='h1' id='diploms'>
                 Мои дипломы и сертификаты
             </Text>
-            <Gallary  />
+            <Gallary  id='diplom'/>
         </div>
     )
 }
