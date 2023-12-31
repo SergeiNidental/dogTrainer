@@ -1,8 +1,11 @@
 import React from "react";
 
 import '../../styles/button/__button';
+import '../../styles/button/__button_question';
 
-export default function Button({children}){
+export default function Button({id, children}){
+
+    let classNew;
 
     const handleAccordeonClick = (elem) => {
         const currentTarget = elem.currentTarget;
@@ -21,7 +24,16 @@ export default function Button({children}){
 
     }
 
+    switch (id){
+        case 'button':
+            classNew = 'button';
+            break;
+        case 'question':
+            classNew = 'button question';
+            break;
+    }
+
     return(
-        <button className="button" onPointerDown={handleAccordeonClick}>{children}</button>
+        <button className={classNew} onPointerDown={handleAccordeonClick}>{children}</button>
     )
 }
