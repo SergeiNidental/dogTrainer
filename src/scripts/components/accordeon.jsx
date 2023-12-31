@@ -5,19 +5,34 @@ import Gallary from '../components/gallary';
 
 import '../../styles/accordeon/__accordeon';
 
-export default function Accordeon({children}){
-    
-    return (
-        <div className="accordeon">
-            <p id="accordeon">
-            {children}
-            </p>
-            <Text typeTag='h1' id='diploms'>
-                Мои дипломы и сертификаты
-            </Text>
-            <Gallary  id='diplom'/>
-        </div>
-    )
+export default function Accordeon({id, children}){
+    let customAccordeon;
+    switch(id){
+        case 'first':
+            customAccordeon=(
+                <div className="accordeon">
+                <p id="accordeon">
+                {children}
+                </p>
+                <Text typeTag='h1' id='diploms'>
+                    Мои дипломы и сертификаты
+                </Text>
+                <Gallary  id='diplom'/>
+            </div>
+            );
+            break;
+        case 'second':
+            customAccordeon=(
+                <div className="accordeon">
+                <p id="accordeon">
+                {children}
+                </p>
+                </div>
+            );
+            break;
+    }
+
+    return (customAccordeon)
 }
 
 
