@@ -14,6 +14,7 @@ import '../../../styles/links/__links';
 
 import avatar from '../../../img/avatar.jpg';
 import plus from '../../../img/plus.svg';
+import minus from '../../../img/minus.svg';
 
 export default function Home() {
     return (
@@ -65,6 +66,7 @@ export default function Home() {
       <Container>
         <Button id='question'>
         <Img src={plus} alt='plus'/>
+        <Img src={minus} alt='minus'/>
           Как я работаю?
         </Button>
         <Accordeon id='second'>
