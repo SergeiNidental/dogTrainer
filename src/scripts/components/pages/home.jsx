@@ -13,8 +13,6 @@ import '../../../styles/__main';
 import '../../../styles/links/__links';
 
 import avatar from '../../../img/avatar.jpg';
-import plus from '../../../img/plus.svg';
-import minus from '../../../img/minus.svg';
 
 export default function Home() {
 
@@ -68,8 +66,6 @@ const [state, setState] = useState([]);
       </Text>
       <Container>
         <Button state={state} setState={setState} type='question' id='question1'>
-        {/* <Img src={plus} alt='plus'/>
-        <Img src={minus} alt='minus'/> */}
           Как я работаю?
         </Button>
         <Accordeon id='second'>
@@ -82,7 +78,6 @@ const [state, setState] = useState([]);
 Я не консультирую по здоровью и питанию, спортивной, нормативной, защитной дрессировке и не готовлю к выставкам.
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question2'>
-        <Img src={plus} alt='plus'/>
           Как проходят занятия и консультации?
           </Button>
         <Accordeon id='second'>
@@ -98,7 +93,6 @@ const [state, setState] = useState([]);
 Мы подбираем удобное время для проведения консультации. Время закрепляется за вами после внесения предоплаты в размере 100% от стоимости занятия или пакета занятий. В назначенное время мы созваниваемся в мессенджере.
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question3'>
-        <Img src={plus} alt='plus'/>
           Сколько стоят занятия и консультации?
           </Button>
         <Accordeon id='second'>
@@ -115,35 +109,30 @@ const [state, setState] = useState([]);
 Подробную информацию о каждом формате работы вы можете узнать в соответствующем разделе.<br  /> 
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question4'>
-        <Img src={plus} alt='plus'/>
           Что может потребоваться в процессе работы?
           </Button>
         <Accordeon id='second'>
         В процессе работы от вас может потребоваться проверка здоровья собаки, а также смена амуниции.<br  /> 
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question5'>
-        <Img src={plus} alt='plus'/>
           С какого возраста следует начинать работу со щенком?
           </Button>
         <Accordeon id='second'>
         Для того, чтобы избежать в будущем возникновения многих проблем поведения, работу со щенком следует начинать с момента его появления в новом доме.<br  /> 
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question6'>
-        <Img src={plus} alt='plus'/>
           Есть ли смысл начинать работу уже со взрослой собакой?
           </Button>
         <Accordeon id='second'>
         В любом возрасте можно обучить собаку новому поведению или скорректировать имеющееся.<br  /> 
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question7'>
-        <Img src={plus} alt='plus'/>
           Есть ли породы с которыми бесполезно работать?
           </Button>
         <Accordeon id='second'>
         Таких пород не существует. Абсолютно к каждой собаке можно найти подход, вне зависимости её породы, возраста или физического состояния.<br  /> 
         </Accordeon>
         <Button state={state} setState={setState} type='question' id='question8'>
-        <Img src={plus} alt='plus'/>
           Что делать, если в ходе работы выяснится, что проблему невозможно решить?
           </Button>
         <Accordeon id='second'>

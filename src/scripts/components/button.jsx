@@ -12,6 +12,7 @@ export default function Button({state, setState, id, type, children}){
 
     let classNew;
     let renewedState;
+    let curerentImg;
 
     const handleAccordeonClick = useCallback((elem,id, type) => {
         const currentTarget = elem.currentTarget;
@@ -62,9 +63,16 @@ export default function Button({state, setState, id, type, children}){
             classNew = 'button question';
             break;
     }
+    const buttonState = state.find(item => item.id === id);
+
+    if ( buttonState && buttonState.active === false){
+        curerentImg=(<Img src={plus} alt='plus'/>);
+    } else {
+        curerentImg=(<Img src={minus} alt='minus'/>);
+    }
 
       console.log(state);
     return(
-        <button className={classNew} onPointerDown={(e) => handleAccordeonClick(e, id, type)}>{children}</button>
+        <button className={classNew} onPointerDown={(e) => handleAccordeonClick(e, id, type)}>{curerentImg}{children}</button>
     )
 }
