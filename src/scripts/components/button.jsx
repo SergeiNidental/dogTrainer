@@ -11,8 +11,9 @@ import '../../styles/button/__button_question';
 export default function Button({state, setState, id, type, children}){
 
     let classNew;
+    let renewedState;
 
-    const handleAccordeonClick = useCallback((elem) => {
+    const handleAccordeonClick = useCallback((elem,id, type) => {
         const currentTarget = elem.currentTarget;
         currentTarget.classList.toggle('active');
         const nextText = currentTarget.nextElementSibling;
@@ -27,9 +28,22 @@ export default function Button({state, setState, id, type, children}){
             nextText.style.maxHeight = Math.min(nextTextHeight, windowHeight) + 'px';
         }
 
+        if (type === 'question'){
+            renewedState = state.map((item)=>{
+                if(item.id === id){
+                    if(item.active===true){
+                        return{...item, active: false}
+                    } 
+                    return {...item, active:true};
+                }
+                return item;
+            })
+        }
+        setState(renewedState);
     },[state]);
 
     useEffect(() => {
+        if (type==='question' && setState){
         setState((prev) => {
           if (prev.some(item => item.id === id)) {
             // Если элемент с таким id уже существует в состоянии, возвращаем предыдущее состояние
@@ -38,7 +52,7 @@ export default function Button({state, setState, id, type, children}){
           // Иначе добавляем новый элемент
           return [...prev, { id, active: false }];
         });
-      }, [id, setState]);
+      }}, [id, setState]);
 
     switch (type){
         case 'button':
@@ -51,6 +65,6 @@ export default function Button({state, setState, id, type, children}){
 
       console.log(state);
     return(
-        <button className={classNew} onPointerDown={handleAccordeonClick}>{children}</button>
+        <button className={classNew} onPointerDown={(e) => handleAccordeonClick(e, id, type)}>{children}</button>
     )
 }
