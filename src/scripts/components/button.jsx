@@ -3,7 +3,7 @@ import React from "react";
 import '../../styles/button/__button';
 import '../../styles/button/__button_question';
 
-export default function Button({id, type, children}){
+export default function Button({state, setState, id, type, children}){
 
     let classNew;
 
