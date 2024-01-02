@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useCallback, useEffect, useState, useMemo} from "react";
 
 import Img from '../components/img';
 
@@ -12,7 +12,7 @@ export default function Button({state, setState, id, type, children}){
 
     let classNew;
 
-    const handleAccordeonClick = (elem) => {
+    const handleAccordeonClick = useCallback((elem) => {
         const currentTarget = elem.currentTarget;
         currentTarget.classList.toggle('active');
         const nextText = currentTarget.nextElementSibling;
@@ -27,7 +27,18 @@ export default function Button({state, setState, id, type, children}){
             nextText.style.maxHeight = Math.min(nextTextHeight, windowHeight) + 'px';
         }
 
-    }
+    },[state]);
+
+    useEffect(() => {
+        setState((prev) => {
+          if (prev.some(item => item.id === id)) {
+            // Если элемент с таким id уже существует в состоянии, возвращаем предыдущее состояние
+            return prev;
+          }
+          // Иначе добавляем новый элемент
+          return [...prev, { id, active: false }];
+        });
+      }, [id, setState]);
 
     switch (type){
         case 'button':
@@ -38,6 +49,7 @@ export default function Button({state, setState, id, type, children}){
             break;
     }
 
+      console.log(state);
     return(
         <button className={classNew} onPointerDown={handleAccordeonClick}>{children}</button>
     )

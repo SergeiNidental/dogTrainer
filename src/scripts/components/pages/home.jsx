@@ -18,7 +18,7 @@ import minus from '../../../img/minus.svg';
 
 export default function Home() {
 
-const [state, setState] = useState('');
+const [state, setState] = useState([]);
 
     return (
         <>
