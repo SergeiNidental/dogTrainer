@@ -8,11 +8,14 @@ import minus from '../../img/minus.svg';
 import '../../styles/button/__button';
 import '../../styles/button/__button_question';
 
-export default function Button({state, setState, id, type, children}){
+const MemoizedButton = React.memo(Button);
+
+function Button({state, setState, id, type, children}){
 
     let classNew;
     let renewedState;
     let curerentImg;
+    let finalElement;
 
     const handleAccordeonClick = useCallback((elem,id, type) => {
         const currentTarget = elem.currentTarget;
@@ -30,7 +33,7 @@ export default function Button({state, setState, id, type, children}){
         }
 
         if (type === 'question'){
-            renewedState = state.map((item)=>{
+            renewedState =state ? state.map((item)=>{
                 if(item.id === id){
                     if(item.active===true){
                         return{...item, active: false}
@@ -38,9 +41,10 @@ export default function Button({state, setState, id, type, children}){
                     return {...item, active:true};
                 }
                 return item;
-            })
+            }) : [];
+            setState(renewedState);
         }
-        setState(renewedState);
+
     },[state]);
 
     useEffect(() => {
@@ -63,16 +67,23 @@ export default function Button({state, setState, id, type, children}){
             classNew = 'button question';
             break;
     }
-    const buttonState = state.find(item => item.id === id);
-
-    if ( buttonState && buttonState.active === false){
-        curerentImg=(<Img src={plus} alt='plus'/>);
-    } else {
-        curerentImg=(<Img src={minus} alt='minus'/>);
-    }
 
       console.log(state);
-    return(
-        <button className={classNew} onPointerDown={(e) => handleAccordeonClick(e, id, type)}>{curerentImg}{children}</button>
-    )
+
+      if(type==='question'){
+        const buttonState = state && state.find(item => item.id === id);
+
+        if ( buttonState && buttonState.active === false){
+            curerentImg=(<Img src={plus} alt='plus'/>);
+        } else {
+            curerentImg=(<Img src={minus} alt='minus'/>);
+        }
+        finalElement = (<button className={classNew} onPointerDown={(e) => handleAccordeonClick(e, id, type)}>{curerentImg}{children}</button>);
+    } else {
+        finalElement = (<button className={classNew} onPointerDown={(e) => handleAccordeonClick(e, id, type)}>{children}</button>);
+    }
+
+    return(finalElement);
 }
+
+export default MemoizedButton;
