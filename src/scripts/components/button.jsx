@@ -1,5 +1,10 @@
 import React from "react";
 
+import Img from '../components/img';
+
+import plus from '../../img/plus.svg';
+import minus from '../../img/minus.svg';
+
 import '../../styles/button/__button';
 import '../../styles/button/__button_question';
 
