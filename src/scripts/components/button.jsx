@@ -3,7 +3,7 @@ import React from "react";
 import '../../styles/button/__button';
 import '../../styles/button/__button_question';
 
-export default function Button({id, children}){
+export default function Button({id, type, children}){
 
     let classNew;
 
@@ -24,7 +24,7 @@ export default function Button({id, children}){
 
     }
 
-    switch (id){
+    switch (type){
         case 'button':
             classNew = 'button';
             break;
