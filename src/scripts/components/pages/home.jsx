@@ -14,6 +14,8 @@ import '../../../styles/__main';
 import '../../../styles/links/__links';
 
 import avatar from '../../../img/avatar.jpg';
+import whatsapp from '../../../img/whatsapp.svg';
+import telegram from '../../../img/telegram.svg';
 
 export default function Home() {
 
@@ -144,8 +146,12 @@ const [state, setState] = useState([]);
         ДЛЯ СВЯЗИ СО МНОЙ
       </Text>
       <Container id='horizontal'>
-        <ButtonLink id='whatsapp' source='79923354779' />
-        <ButtonLink id='telegram' source='ENidental' />
+        <ButtonLink id='whatsapp' source='79923354779'>
+        <Img src={whatsapp} alt="whatsapp" />
+        </ButtonLink>
+        <ButtonLink id='telegram' source='ENidental'>
+        <Img src={telegram} alt="telegram" />
+        </ButtonLink>
       </Container>
         </>
     )

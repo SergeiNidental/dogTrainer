@@ -1,17 +1,19 @@
 import React from "react";
 
-export default function LinkButton({id, source}){
+import '../../styles/button/__button_link';
+
+export default function LinkButton({id, source, children}){
 let messangerLink;
 let finalElement;
     if(id==='whatsapp'){
      messangerLink = `https://wa.me/${source}`;
-     finalElement = (<a href={messangerLink} target="_blank" rel="noopener noreferrer">
-     Отправить сообщение в WhatsApp
+     finalElement = (<a className="linkButton" href={messangerLink} target="_blank" rel="noopener noreferrer">
+     {children}
      </a>);
     } else{
         messangerLink = `https://t.me/${source}`;
-        finalElement = (<a href={messangerLink} target="_blank" rel="noopener noreferrer">
-        Отправить сообщение в Telegram
+        finalElement = (<a className="linkButton" href={messangerLink} target="_blank" rel="noopener noreferrer">
+        {children}
       </a>);
     }
 
