@@ -75,6 +75,34 @@ export default function OnlineCourses(){
         <Img src={facebook} alt="facebook" />
         </ButtonLink>
       </Container>
+      <SeparatingLine />
+      <Text typeTag='p' id='diploms'>
+      Пакет из 4 онлайн-занятий
+      </Text>
+      <ListComponent id='workplan3' />
+      <Text typeTag='p' id='boldtitle'>
+      СТОИМОСТЬ - 7000000$
+      </Text>
+      <Text typeTag='p' id='thintitle'>
+      ЗАПИСАТЬСЯ НА ЗАНЯТИЕ
+      </Text>
+      <Container id='horizontal'>
+        <ButtonLink id='whatsapp' source='79923354779'>
+        <Img src={whatsapp} alt="whatsapp" />
+        </ButtonLink>
+        <ButtonLink id='telegram' source='ENidental'>
+        <Img src={telegram} alt="telegram" />
+        </ButtonLink>
+        <ButtonLink id='facebook' source='100040803893308'>
+        <Img src={facebook} alt="facebook" />
+        </ButtonLink>
+      </Container>
+      <Container id='backgroundBrown'>
+      <Text typeTag='h2' id='backgroundBrown'>
+        ЭТАПЫ РАБОТЫ
+      </Text>
+      <ListComponent id='workStadeList' />
+      </Container>
         </>
     )
 }
