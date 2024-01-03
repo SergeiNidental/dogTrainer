@@ -1,0 +1,7 @@
+.separatingline{
+    width: 80%;
+    height: 2px;
+    background-color: rgba(109, 72, 50, 0.5);
+    margin: auto;
+    border-radius: 40%;
+}

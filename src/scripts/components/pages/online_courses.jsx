@@ -5,6 +5,7 @@ import Img from '../img';
 import ListComponent from "../list";
 import Container from '../container';
 import ButtonLink from '../link_button';
+import SeparatingLine from "../separatingline";
 
 import banner from '../../../img/banner.jpg';
 import whatsapp from '../../../img/whatsapp.svg';
@@ -52,6 +53,7 @@ export default function OnlineCourses(){
         <Img src={facebook} alt="facebook" />
         </ButtonLink>
       </Container>
+      <SeparatingLine />
         </>
     )
 }
