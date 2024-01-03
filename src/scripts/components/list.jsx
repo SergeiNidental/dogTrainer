@@ -1,5 +1,8 @@
 import React from "react";
 
+import '../../styles/list_component/__list';
+import '../../styles/container/__container';
+
 export default function ListComponent({id}){
     let finalElement;
     const behaviorsList = [
@@ -14,9 +17,9 @@ export default function ListComponent({id}){
         'Страхи, фобии и тревожность'
       ];
         if(id==='problemToResolve'){
-            finalElement = ( <ul>
+            finalElement = ( <ul className="container">
                 {behaviorsList.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li className="listComponent" key={index}>{item}</li>
                 ))}
               </ul>)
       }
