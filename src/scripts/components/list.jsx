@@ -5,6 +5,7 @@ import '../../styles/container/__container';
 import '../../styles/list_component/__list_backgroundbrown';
 import '../../styles/list_component/__list_nonmarkers';
 import '../../styles/list_component/__list_evenlistitem';
+import '../../styles/list_component/__list_roundmarkers';
 
 export default function ListComponent({id}){
     let finalElement;
@@ -63,6 +64,12 @@ export default function ListComponent({id}){
         'Последующие онлайн-занятия',
         'Все последующие занятия будут направлены на работу по индивидуальному плану.'
       ];
+      const additoinList = [
+        'В  работе я придерживаюсь принципа НИМА (Наименьшая Интрузивность и Минимальная Аверсивность). Я не являюсь сторонницей теории доминирования. Не применяю в работе побои, рывки, альфа-перевороты и тому подобное. Не использую аверсивную амуницию - удавки, строгие ошейники, электрошоковые ошейники',
+        'Я не консультирую по здоровью и питанию, спортивной, нормативной, защитной дрессировке',
+        'Я не могу обозначить точное количество занятий, которое требуется для решение ваших проблем. Каждый случай индивидуален',
+        'В процессе работы от вас может потребоваться проверка здоровья собаки и смена амуниции',
+      ];
         if(id==='problemToResolve'){
             finalElement = ( <ul className="container">
                 {behaviorsList.map((item, index) => (
@@ -104,6 +111,12 @@ export default function ListComponent({id}){
             ))}
           </ol>
         );
+      } else if (id==='additoinList'){
+        finalElement = ( <ul className="container">
+        {additoinList.map((item, index) => (
+          <li className="listComponent backgroundbrown roundmarkers" key={index}>{item}</li>
+        ))}
+      </ul>)
       }
       return (finalElement);
 }
