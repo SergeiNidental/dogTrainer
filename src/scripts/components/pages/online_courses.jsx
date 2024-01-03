@@ -24,6 +24,19 @@ export default function OnlineCourses(){
       </Text>
       <ListComponent id='whatyouwillget' />
       </Container>
+      <Text typeTag='h2' id='reviews'>
+        СТОИМОСТЬ И ТАРИФЫ
+      </Text>
+      <Text typeTag='p' id='diploms'>
+      Первое онлайн-занятие + индивидуальный план работы
+      </Text>
+      <ListComponent id='workplan' />
+      <Text typeTag='p' id='boldtitle'>
+      СТОИМОСТЬ - 1000000$
+      </Text>
+      <Text typeTag='p' id='thintitle'>
+      ЗАПИСАТЬСЯ НА ЗАНЯТИЕ
+      </Text>
         </>
     )
 }
