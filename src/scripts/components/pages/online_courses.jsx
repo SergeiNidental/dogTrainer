@@ -22,6 +22,7 @@ export default function OnlineCourses(){
       <Text typeTag='h2' id='backgroundBrown'>
         ЧТО ВЫ ПОЛУЧИТЕ?
       </Text>
+      <ListComponent id='whatyouwillget' />
       </Container>
         </>
     )
