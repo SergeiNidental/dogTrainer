@@ -16,6 +16,7 @@ import '../../../styles/links/__links';
 import avatar from '../../../img/avatar.jpg';
 import whatsapp from '../../../img/whatsapp.svg';
 import telegram from '../../../img/telegram.svg';
+import facebook from '../../../img/facebook.svg';
 
 export default function Home() {
 
@@ -151,6 +152,9 @@ const [state, setState] = useState([]);
         </ButtonLink>
         <ButtonLink id='telegram' source='ENidental'>
         <Img src={telegram} alt="telegram" />
+        </ButtonLink>
+        <ButtonLink id='facebook' source='ENidental'>
+        <Img src={facebook} alt="facebook" />
         </ButtonLink>
       </Container>
         </>
