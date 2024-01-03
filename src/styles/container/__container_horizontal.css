@@ -1,4 +1,5 @@
 .horizontal{
     flex-direction: row;
     align-items: center;
+    margin-bottom: 1em;
 }
