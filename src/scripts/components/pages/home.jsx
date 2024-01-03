@@ -8,6 +8,7 @@ import Accordeon from "../accordeon";
 import Container from '../container';
 import Button from '../button';
 import Gallary from '../gallary';
+import ButtonLink from '../link_button';
 
 import '../../../styles/__main';
 import '../../../styles/links/__links';
@@ -142,6 +143,10 @@ const [state, setState] = useState([]);
       <Text typeTag='h2' id='reviews'>
         ДЛЯ СВЯЗИ СО МНОЙ
       </Text>
+      <Container id='horizontal'>
+        <ButtonLink id='whatsapp' source='79923354779' />
+        <ButtonLink id='telegram' source='ENidental' />
+      </Container>
         </>
     )
 }
