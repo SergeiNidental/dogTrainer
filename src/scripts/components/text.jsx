@@ -5,6 +5,7 @@ import '../../styles/text/__text_name';
 import '../../styles/text/__text_nameDiscription';
 import '../../styles/text/__text_diploms';
 import '../../styles/text/__text_services';
+import '../../styles/text/__text_backgroundbrown';
 
 export default function Text({typeTag, id, children}){
 let classCase;
@@ -24,6 +25,9 @@ switch (id) {
         break;
     case 'reviews':
         classCase={className:'services'};
+        break;
+    case 'backgroundBrown':
+        classCase={className:'textBackgroundColor'};
         break;
 }
 
