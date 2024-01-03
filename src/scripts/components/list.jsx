@@ -32,6 +32,14 @@ export default function ListComponent({id}){
         'Домашнее задание',
         'Обратная связь в течение 5 дней после занятия'
       ];
+      const workPlanList2 = [
+        '1 час занятия формате видео разговора и при необходимости работа с собакой в прямом эфире',
+        'Тезисная фиксация сказанной на занятии информации',
+        'Дополнительные полезные материалы',
+        'Домашнее задание',
+        'Домашнее задание',
+        'Обратная связь в течение 10 дней после занятия'
+      ];
         if(id==='problemToResolve'){
             finalElement = ( <ul className="container">
                 {behaviorsList.map((item, index) => (
@@ -47,6 +55,12 @@ export default function ListComponent({id}){
       } else if (id==='workplan') {
         finalElement = ( <ul className="container">
         {workPlanList.map((item, index) => (
+          <li className="listComponent" key={index}>{item}</li>
+        ))}
+      </ul>)
+      } else if (id==='workplan2') {
+        finalElement = ( <ul className="container">
+        {workPlanList2.map((item, index) => (
           <li className="listComponent" key={index}>{item}</li>
         ))}
       </ul>)
