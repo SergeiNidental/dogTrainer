@@ -6,6 +6,7 @@ import ListComponent from "../list";
 import Container from "../container";
 import ButtonLink from '../link_button';
 import SeparatingLine from "../separatingline";
+import Gallary from "../gallary";
 
 import banner from '../../../img/banner.jpg';
 import whatsapp from '../../../img/whatsapp.svg';
@@ -102,6 +103,16 @@ export default function PersonalTrenings(){
         ЭТАПЫ РАБОТЫ
       </Text>
       <ListComponent id='workStadeList1' />
+      </Container>
+      <Text typeTag='h2' id='reviews'>
+        ОТЗЫВЫ УЧЕНИКОВ
+      </Text>
+      <Gallary  id='diplom'/>
+      <Container id='backgroundBrown'>
+      <Text typeTag='h2' id='backgroundBrown'>
+        ДОПОЛНИТЕЛЬНО
+      </Text>
+      <ListComponent id='additoinList1' />
       </Container>
         </>
     )
