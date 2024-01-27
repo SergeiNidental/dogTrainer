@@ -27,6 +27,10 @@ export default function PersonalTrenings(){
       <Text typeTag='h2' id='reviews'>
         СТОИМОСТЬ И ТАРИФЫ
       </Text>
+      <Text typeTag='p' id='diploms'>
+      Первое очное занятие + индивидуальный план работы
+      </Text>
+      <ListComponent id='workplan4' />
         </>
     )
 }
