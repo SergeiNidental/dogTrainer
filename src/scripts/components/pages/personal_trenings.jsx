@@ -12,6 +12,9 @@ export default function PersonalTrenings(){
             Очные занятие в Монреале
         </Text>
         <Img src={banner} alt="banner" />
+        <Text typeTag='h2' id='reviews'>
+        С КАКИМИ ПРОБЛЕМАМИ Я МОГУ ВАМ ПОМОЧЬ?
+      </Text>
         </>
     )
 }

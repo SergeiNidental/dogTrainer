@@ -104,7 +104,7 @@ export default function ListComponent({id}){
         finalElement = (
           <ol className="container">
             {workStadeList.map((item, index) => (
-              <li className={`listComponent backgroundbrown nonmarkers ${index % 2 !== 0 ? 'evenlistitem' : ''}`}
+              <li className={`listComponent backgroundbrown nonmarkers ${index % 2 === 0 ? 'evenlistitem' : ''}`}
               key={index}>
                 {index % 2 === 0 ? `${index / 2 + 1}. ${item}` : item}
               </li>
