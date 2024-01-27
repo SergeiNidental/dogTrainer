@@ -58,6 +58,13 @@ export default function ListComponent({id}){
         'Домашнее задание',
         'Обратная связь в течение 5 дней после занятия'
       ];
+      const workPlanList5 = [
+        '1 часа занятия с выездом к вам',
+        'Тезисная фиксация сказанной на занятии информации',
+        'Дополнительные полезные материалы',
+        'Домашнее задание',
+        'Обратная связь в течение 10 дней после занятия'
+      ];
       const workStadeList = [
         'Связь со мной',
         'Напишите ваш запрос мне в Whats App, Telegram или Instagram.',
@@ -128,6 +135,12 @@ export default function ListComponent({id}){
       } else if (id==='workplan4') {
         finalElement = ( <ul className="container">
         {workPlanList4.map((item, index) => (
+          <li className="listComponent" key={index}>{item}</li>
+        ))}
+      </ul>)
+      } else if (id==='workplan5') {
+        finalElement = ( <ul className="container">
+        {workPlanList5.map((item, index) => (
           <li className="listComponent" key={index}>{item}</li>
         ))}
       </ul>)
