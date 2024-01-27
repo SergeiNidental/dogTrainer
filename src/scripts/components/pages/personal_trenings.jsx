@@ -31,6 +31,9 @@ export default function PersonalTrenings(){
       Первое очное занятие + индивидуальный план работы
       </Text>
       <ListComponent id='workplan4' />
+      <Text typeTag='p' id='boldtitle'>
+      СТОИМОСТЬ - 1000000$
+      </Text>
         </>
     )
 }
