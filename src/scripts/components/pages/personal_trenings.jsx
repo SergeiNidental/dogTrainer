@@ -4,8 +4,13 @@ import Text from "../text";
 import Img from '../img';
 import ListComponent from "../list";
 import Container from "../container";
+import ButtonLink from '../link_button';
+import SeparatingLine from "../separatingline";
 
 import banner from '../../../img/banner.jpg';
+import whatsapp from '../../../img/whatsapp.svg';
+import telegram from '../../../img/telegram.svg';
+import facebook from '../../../img/facebook.svg';
 
 export default function PersonalTrenings(){
     return(
@@ -34,6 +39,21 @@ export default function PersonalTrenings(){
       <Text typeTag='p' id='boldtitle'>
       СТОИМОСТЬ - 1000000$
       </Text>
+      <Text typeTag='p' id='thintitle'>
+      ЗАПИСАТЬСЯ НА ЗАНЯТИЕ
+      </Text>
+      <Container id='horizontal'>
+        <ButtonLink id='whatsapp' source='79923354779'>
+        <Img src={whatsapp} alt="whatsapp" />
+        </ButtonLink>
+        <ButtonLink id='telegram' source='ENidental'>
+        <Img src={telegram} alt="telegram" />
+        </ButtonLink>
+        <ButtonLink id='facebook' source='100040803893308'>
+        <Img src={facebook} alt="facebook" />
+        </ButtonLink>
+      </Container>
+      <SeparatingLine />
         </>
     )
 }
