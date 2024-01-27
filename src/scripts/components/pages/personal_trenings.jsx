@@ -24,6 +24,9 @@ export default function PersonalTrenings(){
       </Text>
       <ListComponent id='whatyouwillget' />
       </Container>
+      <Text typeTag='h2' id='reviews'>
+        СТОИМОСТЬ И ТАРИФЫ
+      </Text>
         </>
     )
 }
