@@ -16,7 +16,7 @@ import facebook from '../../../img/facebook.svg';
 export default function OnlineCourses(){
     return(
         <>
-        <Text typeTag='h1' id='name'>
+        <Text typeTag='h1' id='boldtitle'>
             ОНЛАЙН ЗАНЯТИЯ
         </Text>
         <Img src={banner} alt="banner" />
@@ -107,7 +107,9 @@ export default function OnlineCourses(){
       <Text typeTag='h2' id='reviews'>
         ОТЗЫВЫ УЧЕНИКОВ
       </Text>
-      <Gallary  id='diplom'/>
+      <Container>
+      <Gallary  id='reviews'/>
+      </Container>
       <Container id='backgroundBrown'>
       <Text typeTag='h2' id='backgroundBrown'>
         ДОПОЛНИТЕЛЬНО
