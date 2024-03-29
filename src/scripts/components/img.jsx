@@ -6,6 +6,7 @@ import '../../styles/img/__img_1';
 import '../../styles/img/__plus';
 import '../../styles/img/__minus';
 import '../../styles/img/__img_messangers';
+import '../../styles/img/__img_banner';
 
 export default function Img({alt, src}){
     let classCase;
@@ -31,6 +32,8 @@ export default function Img({alt, src}){
         case 'facebook':
             classCase='messangers';
             break;
+        case 'banner':
+            classCase='banner';
     }
 
     return(
