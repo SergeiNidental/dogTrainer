@@ -1,10 +1,12 @@
 import React from "react";
 
-import img2 from '../../img/2.PNG';
-import img1 from '../../img/1.PNG';
-import img3 from '../../img/3.PNG';
-import img4 from '../../img/4.PNG';
-import img5 from '../../img/5.PNG';
+import img1 from '../../img/review_1.png';
+import img2 from '../../img/review_2.png';
+import img3 from '../../img/review_3.png';
+import img4 from '../../img/review_4.png';
+import img5 from '../../img/review_5.png';
+import img6 from '../../img/review_6.png';
+import img7 from '../../img/review_7.png';
 
 import '../../styles/img/__img_1';
 
@@ -26,8 +28,12 @@ export default function Gallary({id}){
       integerGallary=(
         <div className="scroll-container">
         <Img src={img1} alt='gallary' />
+        <Img src={img2} alt='gallary' />
+        <Img src={img3} alt='gallary' />
         <Img src={img4} alt='gallary' />
         <Img src={img5} alt='gallary' />
+        <Img src={img6} alt='gallary' />
+        <Img src={img7} alt='gallary' />
       </div>  
       );
       break;
