@@ -107,7 +107,9 @@ export default function PersonalTrenings(){
       <Text typeTag='h2' id='reviews'>
         ОТЗЫВЫ УЧЕНИКОВ
       </Text>
-      <Gallary  id='diplom'/>
+      <Container>
+      <Gallary  id='reviews'/>
+      </Container>
       <Container id='backgroundBrown'>
       <Text typeTag='h2' id='backgroundBrown'>
         ДОПОЛНИТЕЛЬНО
