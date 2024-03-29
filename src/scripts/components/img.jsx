@@ -6,7 +6,6 @@ import '../../styles/img/__img_1';
 import '../../styles/img/__plus';
 import '../../styles/img/__minus';
 import '../../styles/img/__img_messangers';
-import '../../styles/img/__img_gallary';
 
 export default function Img({alt, src}){
     let classCase;
